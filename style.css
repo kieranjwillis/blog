@@ -1,0 +1,485 @@
+body
+{
+	font-family: "Lato";
+}
+.container
+{
+	width: 1080px;
+	margin: 0 auto;
+}
+.contentdiv
+{
+	border: solid 5px #3C3C3C;
+	border-top: solid 2px #3C3C3C;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+/*Bild Container mit Überschrift und Feld*/
+.piccontainer
+{
+	height: 650px;
+}
+.pictitle
+{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	font-family: "Playfair Display";
+	font-weight: 200;
+	margin-top: 95px;
+	text-shadow: 1px 1px black;
+}
+.picitem
+{
+	background-color: white;
+	height: 250px;
+	width: 400px;
+    margin: 0 auto;
+    margin-top: 90px;
+    text-align: center;
+    padding-top: 45px;
+    transition: background-color 5s;
+}
+.picitem > h3
+{
+	font-family: "Playfair Display";
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+.picitem > p
+{
+	margin: 0 20px;
+}
+.picitem:hover
+{
+	background-color: transparent;
+}
+
+/*Formular*/
+.formline
+{
+	height: 35px;
+}
+.label
+{
+	font-weight: 300;
+	font-size: 25px;
+	color: black;
+	text-align: left;
+	height: 100%;
+}
+.input
+{
+	outline: none;
+	border: none;
+	border: 1px solid #3C3C3C;
+	border-right: 15px solid #3C3C3C;
+	height: 100%;
+	width: 100%;
+	transition: border-right 0.3s;
+	padding-left: 5px;
+}
+.input:focus
+{
+	border-right: 10px solid #D0A352;
+	border: 1px solid #D0A352;
+}
+.span
+{
+	color: #8A8A8A;
+	height: 100%;
+	text-align: right;
+}
+.right
+{
+	text-align: right;
+}
+.textarea
+{
+	resize: none;
+	height: 100px;
+}
+.textareacontent
+{
+	height: 200px;
+}
+
+/*Allgemein*/
+button
+{
+	margin: 5px auto;
+	width: 120px;
+	height: 45px;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 2px;
+	background-color: white;
+	border: solid 1px #D0A352;
+	transition: color, background-color 1s;
+}
+.textalign
+{
+	text-align: center;
+}
+button:hover
+{
+	background-color: #D0A352;
+	color: white;
+}
+p
+{
+	color: #636363;
+	font-size: 15px;
+}
+a
+{
+	color: black;
+}
+a:hover
+{
+	text-decoration: none;
+	color: black;
+}
+a:active
+{
+	text-decoration: none;
+	color: black;
+}
+a:visited
+{
+	text-decoration: none;
+	color: black;
+	outline: 0;
+}
+
+/*Titel der Website*/
+#title
+{
+	padding:50px 0 50px;
+	text-align: center;
+
+}
+#titlediv > h1
+{
+	font-size: 100px;
+	color: white;
+	text-shadow: 25px 0px #D0A352;
+}
+#titlediv
+{
+	margin: 0 auto;
+	border-bottom: solid black 1px;
+}
+
+/*Content Area bei Postsvorschau*/
+.postspace
+{
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	transition: border-bottom 0.5s;
+	transition: background-color 0.6s;
+}
+.postspace > h3
+{
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #D0A352;
+	text-decoration: underline;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.postspace > h1
+{
+	font-family: "Playful Display";
+	text-align: center;
+}
+
+.postspace > h4
+{
+	color: #888;
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.postspace > h2
+{
+	color: #424242;
+	font-size: 14px;
+}
+
+.postspace > h5
+{
+	color: #424242;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.postspace:hover
+{
+	border-bottom: 1px solid black;
+	background-color: #FFFBF5;
+}
+
+.postspace:active
+{
+	border-bottom: 1px solid #D0A352;
+}
+#postpage > h2
+{
+	font-size: 60px;
+
+}
+
+/*User Infos bei Home*/
+.postuser
+{
+	text-align: center;
+}
+
+.postuserpic
+{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	margin: 50% auto 1% auto;
+}
+
+.postuser > h1
+{
+	font-family: "Playful Display";
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: 300;
+}
+
+/*Content Area bei viewuser*/
+.userspace
+{
+	text-align: center;
+}
+.userspace > h1
+{
+	font-family: "Playful Display";
+	border-bottom: 1px #D0A352 solid;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+
+.userspace > p
+{
+	color: #424242;
+	line-height: 23px;
+}
+
+.userpic
+{
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+/*User area bei posts*/
+.userpostpic
+{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.userpostspace
+{
+	text-align: center;
+}
+.userpostspace > h4
+{
+	font-family: "Playful Display";
+	margin-top: 0;
+}
+/*Post area bei Posts*/
+.postpostspace > h1
+{
+	font-family: "Playful Display";
+	font-size: 45px;
+	text-align: center;
+}
+.postpostspace > h3
+{
+	color: #D0A352;
+	margin-top: 0;
+	font-size: 23px;
+	text-decoration: underline;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.postpostspace > h4
+{
+	font-style: italic;
+	color: #888;
+	font-size: 15px;
+}
+.postpostspace > h2
+{
+	font-size: 21px;
+	margin-top: 10px;
+}
+/*comment area bei posts*/
+.commentspace h5
+{
+	font-size:13px;
+	font-style: italic;
+	color: #424242;
+}
+.commentuser h3
+{
+	font-family: "Playful Display";
+	font-weight: 300;
+	font-size: 20px;
+	margin: 10px 0;
+	text-align: center;
+}
+.commentspace
+{
+	margin-top: 30px; 
+}
+#hr
+{
+	margin-top: 0;
+	border-color: #e5e5e5;
+}
+#commenttextarea
+{
+	height: 66px;
+	resize : none;
+}
+.commentpic
+{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+#commentarea
+{
+	margin-top: 20px;
+	border-left: 1px solid #424242;
+	border-right: 1px solid #424242; 
+}
+.commenttext h6
+{
+	font-size: 11px;
+	text-align: right;
+	direction: rtl;
+}
+
+/*backgrounds*/
+#mountains
+{
+	background-image: url("pics/mountains.jpg");
+}
+#forest
+{
+	background-image: url("pics/forest.jpg");
+}
+#sunrise
+{
+	background-image: url("pics/sunrise.jpg");
+}
+#town
+{
+	background-image: url("pics/town.jpg");
+}
+#he
+{
+	background-image: url("pics/he.jpg");
+}
+#person
+{
+	background-image: url("pics/person.jpg");
+}
+#blackmountain
+{
+	background-image: url("pics/blackmountain.jpg");
+}
+#book
+{
+	background-image: url("pics/book.jpg");
+}
+#mountains2
+{
+	background-image: url("pics/mountains2.jpg");
+}
+#photo
+{
+	background-image: url("pics/photo.jpg")
+}
+#deer
+{
+	background-image: url("pics/deer.jpg");
+}
+#keyboard
+{
+	background-image: url("pics/keyboard.jpg")
+}
+
+/*Footer*/
+footer
+{
+	text-align: center;
+	margin-top: 70px;
+}
+footer > h4
+{
+	font-family: "Playful Display";
+	font-weight: 100;
+	border-bottom: 1px solid black;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+
+/*Mediascreens*/
+@media screen and (max-width : 1080px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	.contentdiv
+	{
+		margin-bottom: 0px;
+	}
+	
+}
+
+@media screen and (max-width: 1080px)
+{
+	.nailthumb
+	{
+		margin-top: 40px;
+	}
+	.postuser >h1
+	{
+		margin-top: 0;
+	}
+	.label
+	{
+		font-size: 20px;
+	}
+	.contentdiv
+	{
+		padding: 10px;
+	}
+	.right
+	{
+		text-align: left;
+	}
+}
