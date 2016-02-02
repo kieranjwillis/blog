@@ -32,4 +32,26 @@ function checkdatabase()
 	}
 }
 
+function selectuser($id)
+{
+	$db = db();
+	$stmt = $db->prepare('SELECT * FROM user WHERE id=:id');
+	$stmt->bindValue(':id', $id, SQLITE3_INTEGER);
+
+	$result = $stmt->execute();
+	$fetch = $result->fetchArray();
+	return $fetch;
+}
+
+function selectpost($id)
+{
+	$db = db();
+	$stmt = $db->prepare('SELECT * FROM post WHERE id=:id');
+	$stmt->bindValue(':id', $id, SQLITE3_INTEGER);
+
+	$result = $stmt->execute();
+	$fetch = $result->fetchArray();
+	return $fetch;
+}
+
 ?>
