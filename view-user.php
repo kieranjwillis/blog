@@ -9,7 +9,7 @@
 ?>
 
 		<div class="container piccontainer" id="he">
-			<h2 class="pictitle">Read my posts.</h2>
+			<h2 class="pictitle">My blog entries.</h2>
 			<div class="picitem">
 				<h3><?php echo selectuser($_GET['id'])['username'] ?>'s World</h3>
 				<p>It's blank</p>
@@ -35,7 +35,7 @@
 						}
 						if($result->fetchArray() === false)
 						{
-							echo "<h2>You didn't post anything yet. D:</h2>";
+							echo "<h2>You haven't posted anything yet.</h2>";
 						}
 					?>
 					<button type="submit" name="all">ALL</button>
