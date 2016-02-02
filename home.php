@@ -40,7 +40,7 @@
 
 				if($result->fetchArray() === false)
 				{
-					echo "<h2>There's is no post at all. What's wrong with the people?</h2>";
+					echo "<h2>There aren't any posts here. What's wrong with people?</h2>";
 				}
 			?>
 		</div>
@@ -63,5 +63,5 @@
 	        });
     	</script>
 
-</body>
+	</body>
 </html>
