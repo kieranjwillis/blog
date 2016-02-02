@@ -6,7 +6,7 @@
 	?>
 		
 		<div class="container piccontainer" id="town">
-			<h2 class="pictitle">Long time no see.</h2>
+			<h2 class="pictitle">Welcome.</h2>
 			<div class="picitem">
 				<h3>Login</h3>
 				<p>Please enter your login information.</p>

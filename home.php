@@ -9,10 +9,10 @@
 ?>
 
 	<div class="container piccontainer" id="book">
-		<h2 class="pictitle">Everything.</h2>
+		<h2 class="pictitle">Welcome.</h2>
 		<div class="picitem">
 			<h3>Home</h3>
-			<p>See every thought here.</p>
+			<p>See every blog entry here.</p>
 		</div>
 	</div>
 	<div class="container contentdiv">
@@ -40,7 +40,7 @@
 
 				if($result->fetchArray() === false)
 				{
-					echo "<h2>There aren't any posts here. What's wrong with people?</h2>";
+					echo "<h2>There aren't any blog entries here.</h2>";
 				}
 			?>
 		</div>
