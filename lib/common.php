@@ -32,4 +32,33 @@ function checkdatabase()
 	}
 }
 
+if(isset($_POST['logout']))
+{
+	unset($_SESSION['id']);
+	header("Location: ../index.php");
+	exit();
+}
+
+function selectuser($id)
+{
+	$db = db();
+	$stmt = $db->prepare('SELECT * FROM user WHERE id=:id');
+	$stmt->bindValue(':id', $id, SQLITE3_INTEGER);
+
+	$result = $stmt->execute();
+	$fetch = $result->fetchArray();
+	return $fetch;
+}
+
+function selectpost($id)
+{
+	$db = db();
+	$stmt = $db->prepare('SELECT * FROM post WHERE id=:id');
+	$stmt->bindValue(':id', $id, SQLITE3_INTEGER);
+
+	$result = $stmt->execute();
+	$fetch = $result->fetchArray();
+	return $fetch;
+}
+
 ?>
