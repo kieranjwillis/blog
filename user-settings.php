@@ -12,9 +12,9 @@
 		<h2 class="pictitle">Personality.</h2>
 		<div class="picitem">
 			<h3>Settings</h3>
-			<p>Notice:<br>If you click on update your account informations will be replaced with all the inputs here</p>
+			<p>Notice:<br>If you click on update your account information will be replaced with all the inputs here</p>
 		</div>
-	</div>
+	</div> 
 	<div class="container contentdiv">
 		<form action="checksettings.php" method="post" autocomplete="off" onsubmit="return checkform()">
 				<div class="formline row">
@@ -43,13 +43,13 @@
 				<br>
 				<div class="row">
 				<div class="col-md-4 col-sm-2 col-xs-12"><label class="label">Summary</label></div>
-				<div class="col-md-4 col-sm-6 col-xs-6 right"><span class="span">Tell them something about you</span></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 right"><span class="span">Description</span></div>
 				<div class="col-md-4 col-sm-4 col-xs-6"><textarea name="summary" id="summary" class="input textarea" maxlength="300" cols="10"><?php echo selectuser($_SESSION['id'])['summary'];?></textarea></div>
 				</div>
 				<br>
 				<div class="row">
 				<div class="col-md-4 col-sm-2 col-xs-12"><label class="label">Profile Picture</label></div>
-				<div class="col-md-4 col-sm-6 col-xs-6 right"><span class="span">Sry there's only a dropdown</span></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 right"><span class="span">Pick your profile picture</span></div>
 				<div class="col-md-4 col-sm-4 col-xs-6"><select name="select" id="select" class="input">
 															<option <?php if(selectuser($_SESSION['id'])['pic'] == 'default'){echo 'selected';} ?> value="default">default</option>
 															<option <?php if(selectuser($_SESSION['id'])['pic'] == 'john'){echo 'selected';} ?> value="john">john</option>

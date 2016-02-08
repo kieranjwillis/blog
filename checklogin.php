@@ -5,8 +5,8 @@
 			<h3>Server Message</h3>
 			
 			<?php
-				$email = $_POST['email'];
-				$password = $_POST["password"];
+				$email = htmlspecialchars($_POST['email']);
+				$password = htmlspecialchars($_POST["password"]);
 				$error = '';
 
 				if(!checkdatabase())
@@ -44,7 +44,7 @@
 				}
 				else
 				{
-					echo "<p>Entweder sind gar keine User registriert oder ein fataler Fehler ist passiert.</p>";
+					echo "<p>Entweder sind gar keine User registriert oder ein Fehler ist passiert.</p>";
 				}
 			
 			?>

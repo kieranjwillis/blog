@@ -5,10 +5,10 @@
 			<h3>Server Message</h3>
 
 			<?php
-				$title = $_POST['title'];
-				$summary = $_POST['summary'];
-				$content = $_POST['content'];
-				$select = $_POST['select'];
+				$title = htmlspecialchars($_POST['title']);
+				$summary = htmlspecialchars($_POST['summary']);
+				$content = htmlspecialchars($_POST['content']);
+				$select = htmlspecialchars($_POST['select']);
 				$id = $_SESSION['id'];
 				$error = '';
 
