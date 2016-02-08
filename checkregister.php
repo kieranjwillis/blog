@@ -4,8 +4,8 @@
 				<div class="picitem">
 					<h3>Server Message</h3>
 					<?php
-						$username = $_POST["username"];
-						$email = $_POST["email"];
+						$username = htmlspecialchars($_POST["username"]);
+						$email = htmlspecialchars($_POST["email"]);
 						$password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 						$error = '';
 
