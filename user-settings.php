@@ -7,7 +7,7 @@
 	}
 
 ?>
-
+<!-- Profileinstellungen -->
 	<div class="container piccontainer" id="mountains2">
 		<h2 class="pictitle">Personality.</h2>
 		<div class="picitem">

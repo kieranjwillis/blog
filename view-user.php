@@ -7,7 +7,7 @@
 	}
 
 ?>
-
+<!-- Ansehen des Userprofils -->
 		<div class="container piccontainer" id="he">
 			<h2 class="pictitle">My blog entries.</h2>
 			<div class="picitem">

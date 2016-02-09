@@ -7,7 +7,7 @@
 	}
 	
 ?> 
-
+<!-- Formular fürs posten des Blogs -->
 		<div class="container piccontainer" id="photo">
 			<h2 class="pictitle">Share yourself.</h2>
 			<div class="picitem">
